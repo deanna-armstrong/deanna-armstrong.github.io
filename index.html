@@ -6,10 +6,7 @@
   <title>Deanna Armstrong | ePortfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f4f6fa;
@@ -17,83 +14,87 @@
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #0066cc;
       color: white;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
       text-align: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin-top: 0.5rem; font-size: 1.1rem; }
+    .elevator-pitch {
+      font-style: italic;
+      margin-top: 0.5rem;
     }
-
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: 3rem auto;
       padding: 0 1.5rem;
       text-align: center;
     }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
+    p { font-size: 1.1rem; margin-bottom: 2rem; }
     .card-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
     }
-
     .card {
       background-color: white;
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, background-color 0.2s ease;
       width: 250px;
     }
-
     .card:hover {
       transform: translateY(-5px);
+      background-color: #f0f8ff;
     }
-
     .card a {
       display: inline-block;
       text-decoration: none;
       color: #0066cc;
       font-weight: 600;
     }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      margin-top: 3rem;
-      text-align: center;
-    }
-
-    section h2, section h3 {
-      color: #2a2f45;
-    }
-
+    .card a:hover { text-decoration: underline; }
+    section { margin-top: 3rem; text-align: center; }
+    section h2, section h3 { color: #2a2f45; }
     ul {
       list-style-type: none;
       padding: 0;
       font-size: 1rem;
       margin-top: 1rem;
     }
-
-    li {
-      margin: 0.5rem 0;
+    li { margin: 0.5rem 0; }
+    .tech-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
     }
-
+    .tech-logos img {
+      width: 60px;
+      height: auto;
+      transition: transform 0.2s;
+    }
+    .tech-logos img:hover {
+      transform: scale(1.1);
+    }
+    .btn {
+      background-color: #0066cc;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background-color: #004999;
+    }
     footer {
       background-color: #eaeaea;
       text-align: center;
@@ -104,10 +105,10 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Deanna Armstrong</h1>
     <p>Computer Science Capstone ePortfolio</p>
+    <div class="elevator-pitch">UX/UI-focused Full Stack Developer passionate about streamlining municipal operations through design and automation.</div>
   </header>
 
   <main>
@@ -130,12 +131,19 @@
       </div>
       <div class="card">
         <p>Resume</p>
-        <a href="https://snhu-my.sharepoint.com/:w:/g/personal/deanna_armstrong1_snhu_edu/ETf6gNZUB2dEkAFjbnh8e_UBpRL9qMoNXcQ2Rm_Ho37jrg?email=deanna.armstrong1%40snhu.edu&e=7lsYaP" target="_blank">View My Resume</a>
-
+        <a class="btn" href="https://snhu-my.sharepoint.com/:w:/g/personal/deanna_armstrong1_snhu_edu/ETf6gNZUB2dEkAFjbnh8e_UBpRL9qMoNXcQ2Rm_Ho37jrg?email=deanna.armstrong1%40snhu.edu&e=7lsYaP" target="_blank">Download Resume</a>
       </div>
     </div>
 
-    <!-- About Me + Skills -->
+    <section>
+      <h2>Technology Stack</h2>
+      <div class="tech-logos">
+        <a href="https://vercel.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Vercel_logo_black.svg" alt="Vercel Logo"></a>
+        <a href="https://render.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Render_Logo.svg" alt="Render Logo"></a>
+        <a href="https://www.mongodb.com/cloud/atlas" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB Atlas Logo"></a>
+      </div>
+    </section>
+
     <section>
       <h2>About Me</h2>
       <p>I'm Deanna Armstrong, an Asset Manager and Computer Science student with a concentration in Data Analysis. I specialize in building automated solutions and data-driven systems for municipal operations and infrastructure.</p>
@@ -148,11 +156,17 @@
         <li>✔️ GitHub, Postman, Excel Power Query</li>
       </ul>
     </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaboration or opportunities!</p>
+      <a class="btn" href="mailto:darmstrong@sau43.org">Email Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/deanna-armstrong/" target="_blank">LinkedIn</a>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 Deanna Armstrong | Built for SNHU Capstone
+    Designed & Developed by Deanna Armstrong 💻 | &copy; 2025
   </footer>
-
 </body>
 </html>
