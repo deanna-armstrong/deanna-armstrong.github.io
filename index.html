@@ -102,6 +102,37 @@
       font-size: 0.9rem;
       color: #666;
     }
+    @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  main {
+    padding: 0 1rem;
+  }
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+  .tech-logos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
   </style>
 </head>
 <body>
@@ -178,19 +209,20 @@
   <section>
   <h2>From Mobile to MEAN: The Original Android Inventory App</h2>
   <p>
-    This original artifact represents the foundation of my capstone project—a native Android inventory application built in Android Studio using Java. Designed to assist small businesses and warehouse managers, the app includes secure login functionality, item tracking, full CRUD operations, and low-stock alerts. It allowed users to easily manage inventory from a mobile device with a user-friendly interface and persistent data storage.
+    This native Android inventory application was built using Java in Android Studio during my CS360 course. Its purpose was to help small business managers track inventory on the go. The app included secure user authentication, the ability to add/edit/delete items, and a notification system for low-stock alerts.
   </p>
-
   <p>
-    This Android app served as the blueprint for my enhanced web-based MEAN stack application. By starting with a fully functional mobile solution, I was able to build upon real-world use cases and reimagine the same system with modern web architecture. The Android version highlights my early work in software design, secure coding, and user experience—all of which evolved as I transitioned to full-stack development using MongoDB, Express, Angular, and Node.js.
+    I selected this artifact because it represents the starting point of my journey in building real-world applications. It was the first project where I implemented mobile UI design, user-focused workflows, and basic security. It highlights my understanding of the mobile development lifecycle, from activity and intent management to persistent local storage.
   </p>
-
   <p>
-    The original source code is available on GitHub and remains an important part of my development journey, showcasing how I move from platform-specific builds to scalable, cross-platform solutions.
+    As I reviewed the code, I identified opportunities for improvement in scalability, maintainability, and platform independence. These areas inspired the enhancement—transitioning to a full MEAN stack web application. Through this process, I demonstrated skills in code modularization, user experience design, and secure software practices.
   </p>
-
+  <p>
+    The project partially addressed course outcomes in software engineering and collaboration. Enhancing the app helped me better understand user-centered design, iterative improvement, and cross-platform architecture planning.
+  </p>
   <a class="btn" href="https://github.com/deanna-armstrong/CS-360-Mobile-Architect-and-Planning" target="_blank">View Code Files for Android Inventory App on GitHub</a>
-</section>
+  <a class="btn" href="https://1drv.ms/v/c/f0c04b5dcd715a91/EchvlHHOgAZMrQXW1viNmpEBu3zbqVdu7EpCkGW7ggFGiQ?e=rpQO15" target="_blank">Code Review Video Watch Now ▶️</a>
+ </section>
   <section>
   <h3>Android App Preview</h3>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 2rem 0;">
@@ -211,13 +243,16 @@
 <section>
   <h2>Modernized Inventory Management: MEAN Stack Web Application</h2>
   <p>
-    Building on the foundation of the original Android app, this enhanced full-stack version was developed using the MEAN stack (MongoDB, Express, Angular, and Node.js). The application introduces secure login with JWT authentication, real-time data updates, role-based access control, and a responsive Angular UI optimized for both desktop and mobile.
+    This artifact is an enhanced version of my original Android app, redesigned from the ground up as a modern full-stack web application using MongoDB, Express, Angular, and Node.js. I created this artifact during my CS499 capstone to showcase my growth across all core areas: software engineering, data structures and algorithms, and database development.
   </p>
   <p>
-    The project highlights scalable architecture, clean code organization, and a thoughtful user interface. It integrates a priority queue algorithm to flag low-stock items and provides a seamless experience for inventory tracking and restocking.
+    I selected this as the enhanced artifact because it exemplifies how I transformed a single-platform mobile app into a scalable, maintainable, secure system accessible from any device. The frontend was redesigned with Angular Material for responsive UI, while the backend leverages RESTful APIs and secure JWT-based authentication for role-based access.
   </p>
   <p>
-    This web-based system represents the culmination of my learning across all three CS 499 capstone categories: Software Engineering, Data Structures & Algorithms, and Databases.
+    Enhancements included integrating a min-heap priority queue algorithm to surface high-priority restock items and real-time inventory dashboards. I also introduced validation middleware in Node.js and Mongoose schema rules to improve data security and quality.
+  </p>
+  <p>
+    This project helped me meet course outcomes related to software architecture, real-world algorithmic application, collaboration (through GitHub issue management), and secure development practices. I also recorded a code review video to explain the enhancements and design decisions to peers and reviewers.
   </p>
     <div class="card-container">
       <div class="card">
@@ -232,10 +267,6 @@
         <p>Live Application</p>
         <a href="https://nventory-ui.vercel.app/" target="_blank">Visit Nventory.com</a>
       </div>
-      <div class="card">
-        <p>Code Review Video</p>
-        <a href="https://1drv.ms/v/c/f0c04b5dcd715a91/EchvlHHOgAZMrQXW1viNmpEBu3zbqVdu7EpCkGW7ggFGiQ?e=rpQO15" target="_blank">Watch Now ▶️</a>
-      </div>
     </div>
 <hr>
     <section>
@@ -249,7 +280,6 @@
         </a>
         <a href="https://www.mongodb.com/lp/cloud/atlas/try4-reg" target="_blank">
           <img src="https://snhu-my.sharepoint.com/:i:/r/personal/deanna_armstrong1_snhu_edu/Documents/Capstone/ePortfolioShared/atlas.jpg?csf=1&web=1&e=qHjLxJ" alt="MongoDB Atlas Logo">
-        </a>
         </a>
         <a href="https://developer.android.com/studio?gad_source=1&gad_campaignid=21831783525&gbraid=0AAAAAC-IOZkVAR-TWqr-Qxo3mWlv5Vp43&gclid=Cj0KCQjwu7TCBhCYARIsAM_S3Ngp2ErXqNx7BPmWze7H49liroVVrK9tWJ8W3_0Ar3cj45yTyz2TPqUaAg5HEALw_wcB&gclsrc=aw.ds" target="_blank">
           <img src="https://snhu-my.sharepoint.com/:i:/r/personal/deanna_armstrong1_snhu_edu/Documents/Capstone/ePortfolioShared/android%20app%20logo.png?csf=1&web=1&e=UgL2pT" alt="Android Studio Logo">
